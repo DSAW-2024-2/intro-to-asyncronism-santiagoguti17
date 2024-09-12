@@ -1,0 +1,163 @@
+/* Reset y ajustes básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #b8d8f4; /* Azul suave tipo cielo */
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f6f7fb; /* Fondo suave y neutro */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Encabezado */
+header h1 {
+  text-align: center;
+  color: #ffcc00; /* Amarillo Pikachu */
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de filtros */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+select, input, button {
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #FFC107; /* Amarillo, como el color de los botones de las Poké Balls */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Botones de filtros */
+button {
+  background-color: #ff6347; /* Rojo Fuego */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF33CC; /* Rosa más oscuro, como el color de la Poké Ball de Jigglypuff cuando se selecciona */
+}
+
+/* Sección de tarjetas de Pokémon */
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pokemon-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffcc00; /* Amarillo Pikachu */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s ease;
+  color: #333;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  background-color: #ffd700; /* Más vibrante al pasar el cursor */
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.pokemon-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.pokemon-card p {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Estilo de la sección de detalles del Pokémon */
+.pokemon-details {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #87cefa; /* Azul Agua */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+
+  /* Centrando el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-details.active {
+  display: block;
+}
+
+.pokemon-details img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.pokemon-details h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-details p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Temática de botones adicionales */
+#apply-filters-btn, #refresh-btn {
+  padding: 12px 20px;
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#refresh-btn {
+  background-color: #32cd32; /* Verde para el botón de reinicio */
+  color: white;
+}
+
+#refresh-btn:hover {
+  background-color: #228b22; /* Verde más oscuro al pasar el cursor */
+}
+
+
