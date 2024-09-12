@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Pokémon Information</h1>
+        </header>
+
+        <section class="filter-section">
+            <!-- Filtro por peso -->
+            <div class="filter-group">
+                <label for="filter-weight">Filter by weight:</label>
+                <select id="filter-weight">
+                    <option value="">Select weight range</option>
+                    <option value="5">Above 5kg</option>
+                    <option value="10">Above 10kg</option>
+                    <option value="20">Above 20kg</option>
+                </select>
+            </div>
+
+            <!-- Filtro por tipo -->
+            <div class="filter-group">
+                <label for="filter-type">Filter by type:</label>
+                <select id="filter-type">
+                    <option value="">Select Pokémon type</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="electric">Electric</option>
+                    <option value="grass">Grass</option>
+                    <option value="rock">Rock</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="normal">Normal</option>
+                    <option value="ice">Ice</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="poison">Poison</option>
+                    <option value="ground">Ground</option>
+                    <option value="flying">Flying</option>
+                    <option value="bug">Bug</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="steel">Steel</option>
+                    <option value="fairy">Fairy</option>
+                </select>
+            </div>
+
+            <!-- Filtro por nombre -->
+            <div class="filter-group">
+                <label for="filter-name">Filter by name:</label>
+                <input type="text" id="filter-name" placeholder="Enter Pokémon name">
+            </div>
+
+            <div class="filter-group">
+                <button id="apply-filters-btn">Apply Filters</button>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+        </section>
+
+        <section id="pokemon-details" class="pokemon-details">
+                <!-- detalles del pokemon  -->
+        </section>
+
+        <section id="pokemon-list" class="pokemon-list"> </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
