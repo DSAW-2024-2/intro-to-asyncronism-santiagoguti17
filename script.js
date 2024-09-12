@@ -91,6 +91,7 @@ document.getElementById('apply-filters-btn').addEventListener('click', async fun
         filteredPokemon = filteredPokemon.filter((pokemon) =>
             pokemon.name.toLowerCase().includes(nameFilter)
         );
+        
     }
 
     displayPokemonList(filteredPokemon);
